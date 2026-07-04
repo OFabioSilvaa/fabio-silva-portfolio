@@ -334,6 +334,97 @@ h1 {
 .experience-badge {
   color: var(--gold);
   font-size: 0.86rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+.experience-badge-current {
+  color: #0a0c10;
+  background: var(--gold);
+  border-color: var(--gold);
+  font-weight: 700;
+}
+
+.experience-company-header {
+  margin-bottom: 24px;
+}
+
+.experience-company-header h3 {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+}
+
+.experience-company-header p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.timeline {
+  display: grid;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 20px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--card-2);
+  border: 2px solid var(--border);
+  margin-top: 4px;
+  position: relative;
+}
+
+.timeline-marker-current {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.timeline-item:not(:last-child) .timeline-marker::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: calc(100% + 14px);
+  background: var(--border);
+}
+
+.timeline-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.timeline-top h4 {
+  margin: 0 0 4px;
+  font-size: 1.12rem;
+}
+
+.timeline-date {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.84rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content .muted {
+  margin: 0 0 12px;
 }
 
 .bullet-list,
