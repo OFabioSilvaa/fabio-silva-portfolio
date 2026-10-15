@@ -79,13 +79,7 @@ const SKILLS = [
   { group: "Dados", items: ["SQL (Snowflake, PostgreSQL, DuckDB)", "Pipelines, ETL e ELT", "Modelagem analítica", "Qualidade de dados"] },
   { group: "Python", items: ["Pandas e Polars", "openpyxl e Selenium", "RPA e Power Automate", "Git e GitHub Actions"] },
   { group: "BI", items: ["Power BI (DAX, Power Query)", "Tableau", "Google Sheets"] },
-  { group: "IA aplicada", items: ["LLMs e RAG", "Agentes de IA", "Geração assistida de SQL", "Engenharia de prompt"] },
-];
-
-const STUDYING = [
-  { step: "SQL avançado", when: "até fev/2027", note: "CTEs, window functions e certificação SQL Associate (DataCamp)" },
-  { step: "Engenharia de dados", when: "mar–jun/2027", note: "Modelagem, dbt, orquestração e certificação Data Engineer Associate" },
-  { step: "IA aplicada", when: "2º semestre/2027", note: "RAG, agentes e MCP, junto com a pós em Big Data" },
+  { group: "IA aplicada", items: ["Claude Code", "Gemini", "LLMs, RAG e agentes de IA", "Geração assistida de SQL", "Engenharia de prompt"] },
 ];
 
 function ResultsQuery() {
@@ -225,18 +219,6 @@ export default function App() {
               ))}
             </div>
 
-            <div className="next">
-              <h3>O que estou estudando, nesta ordem</h3>
-              <ol>
-                {STUDYING.map((s) => (
-                  <li key={s.step}>
-                    <strong>{s.step}</strong>
-                    <span className="when">{s.when}</span>
-                    <span className="note">{s.note}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
 
             <div className="edu">
               <h3>Formação</h3>

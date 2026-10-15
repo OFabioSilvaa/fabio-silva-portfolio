@@ -114,7 +114,7 @@ p { margin: 0; }
 .next .when { color: var(--muted); font-size: 15px; }
 .next .note { font-size: 15px; }
 
-.edu { margin-top: 48px; display: grid; gap: 6px; }
+.edu { margin-top: 56px; display: grid; gap: 6px; }
 .edu h3 { margin-bottom: 4px; }
 
 .contact { background: var(--ink); color: var(--white); padding: 96px 0; }
