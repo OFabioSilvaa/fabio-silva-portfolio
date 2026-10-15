@@ -16,7 +16,7 @@ const RESULTS = [
 
 const EXPERIENCE = [
   {
-    period: "jun/2026 — atual",
+    period: "jul/2026 — atual",
     role: "Assistente de Crédito",
     team: "Retenção e Portabilidade",
     summary:
